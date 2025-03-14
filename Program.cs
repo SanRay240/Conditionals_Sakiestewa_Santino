@@ -41,6 +41,33 @@ namespace Conditionals_Sakiestewa_Santino
 
             //Prints max to console
             Console.WriteLine($"The maximum number of {myWholeNum}, {num1}, and {num2} is { max }!");
+
+            // Asks user to enter a grade and assigns it to a char variable, grade
+            Console.WriteLine("Enter a grade (A, B, C, D, F)!");
+            char grade = Console.ReadKey().KeyChar;
+
+            //Prints description based on grade value
+            switch (grade)
+            {
+                case 'A':
+                    Console.WriteLine("\nSuperior");
+                    break;
+                case 'B':
+                    Console.WriteLine("\nVery Good");
+                    break;
+                case 'C':
+                    Console.WriteLine("\nAverage");
+                    break;
+                case 'D':
+                    Console.WriteLine("\nBelow Average");
+                    break;
+                case 'F':
+                    Console.WriteLine("\nFail");
+                    break;
+                default:
+                    Console.WriteLine("\nYou did not enter a valid grad3e!");
+                    break;
+            }
         
                 
         }
